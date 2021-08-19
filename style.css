@@ -48,6 +48,9 @@ body{
     background-color: var(--body-color);
     color: var(--text-color);
 }
+.body-grid{
+    display: grid;
+}
 
 h1,h2,h3,ul,p{
     margin: 0;
@@ -72,7 +75,7 @@ img{
     height: auto;
 }
 .section{
-    padding: 1.5rem 0;
+    padding: 1.25rem 0;
 }
 .section-title{
     font-size:var(--h2-font-size);
@@ -188,7 +191,7 @@ gap: 2rem;
 .home__address{
     gap: 1rem;
 }
-.home__information{
+.home__information,.social__information{
     display: flex;
     align-items: center;
     font-size: var(--normal-font-size);
@@ -212,4 +215,94 @@ margin-bottom: var(--mb-2);
 .home__button-movil:hover{
     background-color: var(--text-color);
     color: var(--container-color);
+}
+.social__container{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: max-content;
+    gap:.5rem;
+}
+.social__links{
+display: inline-flex;
+font-size: var(--small-font-size);
+align-items: center;
+color: var(--text-color);
+}
+.social__link:hover{
+color: var(--title-color);
+}
+.social__icon{
+    font-size: 1.5rem;
+    margin-right: .25rem;
+}
+.section__title{
+    margin-bottom: var(--mb-2);
+    letter-spacing: .35rem;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.profile__description{
+    text-align: center;
+}
+span{
+    display: block;
+    margin-bottom: var(--mb-1);
+    margin-top: var(--mb-1);
+}
+.education__content{
+    display: flex;
+    margin-bottom: var(--mb-2);
+    margin-top: var(--mb-2);
+}
+.education__time{
+    padding-right: 1rem;
+}
+.education__rounder{
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--text-color-light);
+    border-radius: 50%;
+    margin-top: .5rem;
+}
+.education__line{
+    display: block;
+    width: 2px;
+    height: 115%;
+    background-color: var(--text-color-light);
+    transform: translate(7px, -8px);
+}
+.education__data{
+    gap: .5rem;
+}
+.education__title{
+    font-size: var(--h3-font-size);
+    font-weight: bolder;
+}
+.education__studies{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: bold;
+}
+.education__year{
+    font-size: var(--smaller-font-size);
+}
+.skills__content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.skills__name{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
+.skills__icon{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.skills__data{
+    margin-top: var(--mb-2);
 }
