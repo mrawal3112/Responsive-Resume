@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icons Library-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href='swiper-bundle.min.css' rel='stylesheet'>
+    <link href='Swiper/swiper-bundle.min.css' rel='stylesheet'>
     <link href='style.css' rel='stylesheet'> <!-- CSS File -->
     <title>Responsive Resume</title>
 </head>
@@ -45,13 +44,13 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#certification" class="nav__link">
-                            <i class='bx bx-award nav__icon'></i>Certifications
+                        <a href="#project" class="nav__link">
+                            <i class='bx bx-code-block nav__icon'></i>Project
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#project" class="nav__link">
-                            <i class='bx bx-code-block nav__icon'></i>Projects
+                        <a href="#certification" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certification
                         </a>
                     </li>
                 </ul>
@@ -173,7 +172,7 @@
                 </div>
             </section>
             <div class="resume__right">
-                <div class="project section" id="project">
+                <section class="project section" id="project">
                     <h2 class="section__title">Projects</h2>
                     <div class="project__container container swiper-container">
                         <div class="swiper-wrapper">
@@ -263,20 +262,20 @@
                         </div>
 
                         <div class="swiper-button-next">
-                            <i class="uil uil-angle-right-b swiper-project-icon"></i>
+                            <i class='bx bx-chevron-right carousel__icon'></i>
                         </div>
                         <div class="swiper-button-prev">
-                            <i class="uil uil-angle-left-b swiper-project-icon"></i>
+                            <i class='bx bx-chevron-left carousel__icon'></i>
                         </div>
                         <div class="swiper-pagination">
                         </div>
                     </div>
-                </div>
-                <div class="certification section" id="certification">
+                </section>
+                <section class="certification section" id="certification">
                     <h2 class="section__title">certifications</h2>
                     <div class="certification__container container swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="certification__content grid swiper-slide">
+                            <div class="certification__content grid swiper-slide body-grid">
                                 <img src="Image/CSS-Certificate.png" alt="" class="certification__img">
                                 <div class="certification__data">
                                     <h3 class="certification__title"><b>CSS - The Complete Guide 2021
@@ -313,51 +312,59 @@
                         </div>
 
                         <div class="swiper-button-next">
-                            <i class="uil uil-angle-right-b swiper-project-icon"></i>
+                            <i class='bx bx-chevron-right carousel__icon'></i>
                         </div>
                         <div class="swiper-button-prev">
-                            <i class="uil uil-angle-left-b swiper-project-icon"></i>
+                            <i class='bx bx-chevron-left carousel__icon'></i>
                         </div>
                         <div class="swiper-pagination">
                         </div>
                     </div>
-                </div>
-                <div class="languages section" id="languages">
+                </section>
+                <section class="languages section">
                     <h2 class="section__title">languages</h2>
-                    <div class="languages__content body-grid">
-                        <ul class="language__list body-grid">
-                            <li>Hindi</li>
-                            <li>English</li>
-                            <li>Punjabi</li>
+                    <div class="language__container">
+                        <ul class="language__content body-grid">
+                            <li class="language__name">
+                                <span class="language__circle"></span>Hindi
+                            </li>
+                            <li class="language__name">
+                                <span class="language__circle"></span>English
+                            </li>
+                            <li class="language__name">
+                                <span class="language__circle"></span>Punjabi
+                            </li>
                         </ul>
                     </div>
-                </div>
-                <div class="interests section" id="interests">
+                </section>
+                <section class="interests section">
                     <h2 class="section__title">interests</h2>
-                    <div class="interests__content body-grid">
-                        <ul class="interests__data">
-                            <li class="interests__name">
-                                <i class='bx bxs-plane-alt interests__icon'></i> Travelling
-                            </li>
-                            <li class="interests__name">
-                                <i class='bx bxs-tennis-ball interests__icon'></i> Cricket
-                            </li>
-                        </ul>
-                        <ul class='interests__data'>
-                            <li class="interests__name">
-                                <i class='bx bxs-music interests__icon'></i> Music
-                            </li>
-                            <li class="interests__name">
-                                <i class='bx bxs-book interests__icon'></i> Reading
-                            </li>
-                        </ul>
+                    <div class="interests__container body-grid">
+                        <div class="interests__content">
+                            <i class='bx bxs-plane-alt interests__icon'></i>
+                            <span class="interests__name">Travelling</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bxs-tennis-ball interests__icon'></i>
+                            <span class="interests__name">Cricket</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bxs-music interests__icon'></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bxs-book interests__icon'></i>
+                            <span class="interests__name">Reading</span>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-
     </main>
-    <script src='swiper-bundle.min.js'></script>
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    <script src='Swiper/swiper-bundle.min.js'></script>
     <script src='script.js'></script>
 </body>
 
