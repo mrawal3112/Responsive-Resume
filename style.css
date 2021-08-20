@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 :root {
     --header-height: 3rem;
-    
+    /* #007aff */
     /*========== Colors ==========*/
     --title-color: #0B0A0A;
     --text-color: #403A3A;
@@ -29,6 +29,8 @@
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+
+    
   }
 
 *,::before,::after{
@@ -75,7 +77,7 @@ img{
     height: auto;
 }
 .section{
-    padding: 1.25rem 0;
+    padding: 1rem 0;
 }
 .section-title{
     font-size:var(--h2-font-size);
@@ -168,7 +170,7 @@ gap: 2rem;
     position: relative;
 }
 .home__container{
-    gap:3rem;
+    gap:1rem;
 }
 .home__data{
     gap: .5rem;
@@ -189,7 +191,7 @@ gap: 2rem;
     margin-bottom: var(--mb-1);
 }
 .home__address{
-    gap: 1rem;
+    gap: .5rem;
 }
 .home__information,.social__information{
     display: flex;
@@ -210,7 +212,7 @@ border-radius: .25rem;
 transition: .3s;
 font-weight: var(--font-medium);
 margin-top: var(--mb-2);
-margin-bottom: var(--mb-2);
+/* margin-bottom: var(--mb-2); */
 }
 .home__button-movil:hover{
     background-color: var(--text-color);
@@ -289,20 +291,98 @@ span{
 .education__year{
     font-size: var(--smaller-font-size);
 }
-.skills__content{
+.skills__content,.interests__content{
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
 }
 
-.skills__name{
+.skills__name,.interests__name{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
+    font-weight: bolder;
 }
-.skills__icon{
+.skills__icon,.interests__icon{
     font-size: 1.5rem;
     margin-right: .5rem;
 }
-.skills__data{
+.skills__data,.interests__data{
     margin-top: var(--mb-2);
 }
+.project__container,.certification__container {
+    overflow: initial;
+  }
+  
+  .project__content,.certification__content{
+    padding: 0 2rem 0 2.5rem;
+  }
+  
+  .project__img,.certification__img {
+    width: 265px;
+    border-radius: 0.5rem;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+  
+  .project__title,.certification__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+  }
+  
+  .project__description,.certification__description {
+    margin-bottom: 0.75rem;
+  }
+  .project__data{
+      margin-top: var(--mb-2);
+  }
+  
+  .project__button:hover .button__icon {
+    -webkit-transform: translateX(0.25rem);
+    transform: translateX(0.25rem);
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: "";
+  }
+  
+  .swiper-project-icon {
+    font-size: 2rem;
+    color: var(--title-color);
+  }
+  
+  .swiper-button-prev {
+    left: -0.5rem;
+  }
+  
+  .swiper-button-next {
+    right: -0.5rem;
+  }
+  
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -1.5rem;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination-bullets {
+    outline: none;
+  }
+  .swiper-pagination-bullet-active{
+      background-color: var(--text-color);
+  }
+  .highlights{
+    list-style-type: disc; 
+    margin-left: 2rem;
+  }
+  .certification h2,.languages h2{
+      margin-top: var(--mb-2);
+  }
+  .language__list{
+      list-style-type: disc;
+      grid-template-columns: repeat(3,1fr);
+      font-weight: bolder;
+      font-size: 1.2rem;
+      gap: 1rem;
+      margin-left: 1.75rem;
+  }

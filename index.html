@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- Icons Library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='swiper-bundle.min.css' rel='stylesheet'>
     <link href='style.css' rel='stylesheet'> <!-- CSS File -->
     <title>Responsive Resume</title>
 </head>
@@ -28,7 +30,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#education" class="nav__link">
+                        <a href="#social" class="nav__link">
                             <i class='bx bxs-conversation nav__icon'></i>Social
                         </a>
                     </li>
@@ -43,12 +45,12 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#certifications" class="nav__link">
+                        <a href="#certification" class="nav__link">
                             <i class='bx bx-award nav__icon'></i>Certifications
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">
+                        <a href="#project" class="nav__link">
                             <i class='bx bx-code-block nav__icon'></i>Projects
                         </a>
                     </li>
@@ -85,7 +87,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="social section">
+                <section class="social section" id='social'>
                     <h2 class="section__title">SOCIAL</h2>
                     <div class="social__container body-grid">
                         <a href="https://github.com/mrawal3112" target='_blank' class="social__link">
@@ -171,11 +173,191 @@
                 </div>
             </section>
             <div class="resume__right">
+                <div class="project section" id="project">
+                    <h2 class="section__title">Projects</h2>
+                    <div class="project__container container swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="project__content grid swiper-slide">
+                                <img src="Image/Mother-Special-Project.png" alt="" class="project__img">
+                                <div class="project__data">
+                                    <h3 class="project__title"><b>Mother Special</b> : It is Web Page where
+                                        you can find recipe’s as good as your mother’s recipe.<h3>
+                                            <p class="project__description"><b>Highlights:</b>
+                                            <ul class='highlights'>
+                                                <li>
+                                                    <p>You can Adjust the number of servings and get the ingredients
+                                                        accordingly.</p>
+                                                </li>
+                                                <li>
+                                                    <p>You can Bookmark your favourite recipes.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Search around 1500-2000 different recipes.</p>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                </div>
+                            </div>
 
+                            <div class="project__content grid swiper-slide">
+                                <img src="Image/Covid-Registration-Form-Project.png" alt="" class="project__img">
+                                <div class="project__data">
+                                    <h3 class="project__title"><b>COVID-19 Registration Form</b> : It is a web page
+                                        which
+                                        is used to
+                                        find COVID vaccination center in different cities of Ontario.<h3>
+                                            <p class="project__description"><b>Highlights:</b>
+                                            <ul class='highlights'>
+                                                <li>
+                                                    <p>It is registricted to ontario province only.</p>
+                                                </li>
+                                                <li>
+                                                    <p>It will help in finding the covid vaccination center and looking
+                                                        the appointment. </p>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                </div>
+                            </div>
+
+                            <div class="project__content grid swiper-slide">
+                                <img src="Image/Basic-Javascript-Quiz-Project.png" alt="" class="project__img">
+                                <div class="project__data">
+                                    <h3 class="project__title"><b>Basic Javascript Quiz</b> : It is a web page which is
+                                        used to test your knowledge about javascript.<h3>
+                                            <p class="project__description"><b>Highlights:</b>
+                                            <ul class='highlights'>
+                                                <li>
+                                                    <p>You can check your level by taking this quiz.</p>
+                                                </li>
+                                                <li>
+                                                    <p>You can also learn new concepts by the means of giving this quiz.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>You will get a score of number of questions
+                                                        answered correctly.</p>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                </div>
+                            </div>
+
+                            <div class="project__content grid swiper-slide">
+                                <img src="Image/Dice-Game-Project.png" alt="" class="project__img">
+                                <div class="project__data">
+                                    <h3 class="project__title"><b>Dice Game</b> : It is a fun game made for the children
+                                        so that they can enjoy and learn at the same time.<h3>
+                                            <p class="project__description"><b>Highlights:</b>
+                                            <ul class='highlights'>
+                                                <li>
+                                                    <p>It will help in improving the thinking power of child.</p>
+                                                </li>
+                                                <li>
+                                                    <p>It will help in improving analytical skills of children</p>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next">
+                            <i class="uil uil-angle-right-b swiper-project-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="uil uil-angle-left-b swiper-project-icon"></i>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+                    </div>
+                </div>
+                <div class="certification section" id="certification">
+                    <h2 class="section__title">certifications</h2>
+                    <div class="certification__container container swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="certification__content grid swiper-slide">
+                                <img src="Image/CSS-Certificate.png" alt="" class="certification__img">
+                                <div class="certification__data">
+                                    <h3 class="certification__title"><b>CSS - The Complete Guide 2021
+                                            (incl. Flexbox, Grid, Sass)</b>
+                                        <h3>
+                                </div>
+                            </div>
+
+                            <div class="certification__content grid swiper-slide">
+                                <img src="Image/CSS-Certificate.png" alt="" class="certification__img">
+                                <div class="certification__data">
+                                    <h3 class="certification__title"><b>The Complete Javascript Course
+                                            2021 : From Zero to Expert!</b>
+                                        <h3>
+                                </div>
+                            </div>
+
+                            <div class="certification__content grid swiper-slide">
+                                <img src="Image/CSS-Certificate.png" alt="" class="certification__img">
+                                <div class="certification__data">
+                                    <h3 class="certification__title"><b>The Complete jQuery Course:
+                                            From Beginner to Expert</b>.<h3>
+                                </div>
+                            </div>
+
+                            <div class="certification__content grid swiper-slide">
+                                <img src="Image/CSS-Certificate.png" alt="" class="certification__img">
+                                <div class="certification__data">
+                                    <h3 class="certification__title"><b>Mongo DB - The Complete
+                                            Developer’s Guide 2021</b>
+                                        <h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next">
+                            <i class="uil uil-angle-right-b swiper-project-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="uil uil-angle-left-b swiper-project-icon"></i>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+                    </div>
+                </div>
+                <div class="languages section" id="languages">
+                    <h2 class="section__title">languages</h2>
+                    <div class="languages__content body-grid">
+                        <ul class="language__list body-grid">
+                            <li>Hindi</li>
+                            <li>English</li>
+                            <li>Punjabi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="interests section" id="interests">
+                    <h2 class="section__title">interests</h2>
+                    <div class="interests__content body-grid">
+                        <ul class="interests__data">
+                            <li class="interests__name">
+                                <i class='bx bxs-plane-alt interests__icon'></i> Travelling
+                            </li>
+                            <li class="interests__name">
+                                <i class='bx bxs-tennis-ball interests__icon'></i> Cricket
+                            </li>
+                        </ul>
+                        <ul class='interests__data'>
+                            <li class="interests__name">
+                                <i class='bx bxs-music interests__icon'></i> Music
+                            </li>
+                            <li class="interests__name">
+                                <i class='bx bxs-book interests__icon'></i> Reading
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
     </main>
+    <script src='swiper-bundle.min.js'></script>
     <script src='script.js'></script>
 </body>
 

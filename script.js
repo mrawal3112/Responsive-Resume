@@ -34,3 +34,17 @@ function scrollActive() {
         }
     })
 }
+let swiper = new Swiper(".project__container,.certification__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+});
