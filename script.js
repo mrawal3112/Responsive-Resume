@@ -1,3 +1,5 @@
+// Displaying the sections on click in mobile + ipad view
+
 const showMenu = (toggleId, navId) => {
     const toggle = document.querySelector(`#${toggleId}`);
     const nav = document.querySelector(`#${navId}`);
@@ -11,6 +13,7 @@ const showMenu = (toggleId, navId) => {
 showMenu('nav__toggle', 'nav__menu');
 
 
+// Remove Menu bar from the bottom/footer
 
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -38,7 +41,7 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive);
 
 
-
+// Swiper Class To Perform Carousel Effect on Projects and Certification Sections
 let swiper = new Swiper(".project__container,.certification__container", {
     cssMode: true,
     loop: true,
@@ -54,8 +57,34 @@ let swiper = new Swiper(".project__container,.certification__container", {
     keyboard: true,
 });
 
+
+// Displaying The Scroll Button
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
     if (this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
+
+// Changing The Theme to Dark/Light Mode
+const themeButton = document.getElementById('night-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
