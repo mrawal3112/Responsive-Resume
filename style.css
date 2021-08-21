@@ -12,12 +12,12 @@
   
     /*========== Font ==========*/
     --body-font: 'Nunito', sans-serif;;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.15rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .95rem;
+    --smaller-font-size: .85rem;
     --font-medium: 500;
     --font-semi-bold: 600;
   
@@ -115,6 +115,10 @@ img{
     align-items: center;
     margin: 0 var(--mb-3);
 }
+.demo{
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width:968px) {
     .nav__menu{
         position: fixed;
@@ -203,7 +207,7 @@ gap: 2rem;
     font-size: 1.5rem;
     margin-right: .5rem;
 }
-.home__button-movil{
+.home__button,.demo__button{
 display: inline-block;
 border: 2px solid var(--text-color);
 color: var(--title-color);
@@ -212,16 +216,16 @@ border-radius: .25rem;
 transition: .3s;
 font-weight: var(--font-medium);
 margin-top: var(--mb-2);
-/* margin-bottom: var(--mb-2); */
 }
-.home__button-movil:hover{
+
+.home__button:hover,.demo__button:hover{
     background-color: var(--text-color);
     color: var(--container-color);
 }
 .social__container{
-    display: flex;
+    display: grid;
     flex-direction: column;
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(2,1fr);
     gap:.5rem;
 }
 .social__links{
@@ -284,7 +288,7 @@ span{
     font-weight: bolder;
 }
 .education__studies{
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     color: var(--title-color);
     font-weight: bold;
 }
@@ -440,7 +444,7 @@ span{
       bottom: 5rem;
   }
 
-  @media screen and (max-width:320px)
+  @media screen and (max-width:350px)
   {
       .nav__list{
           grid-template-columns: repeat(2,1fr);
@@ -459,4 +463,54 @@ span{
         justify-self: center;
       }
   }
-  
+  @media screen and (min-width:768px)
+  {
+    .home__title{
+        font-size: 2rem;
+    }
+    .home__information,
+    .social__information,
+    .profile__description,
+    .home__profession,
+    .education__studies,
+    .skills__name,
+    .project__description,
+    .language__name,.interests__content{
+        font-size: 1.35rem
+    }
+    .home__icon,.skills__icon,.interests__icon{
+        font-size: 1.75rem;
+    }
+    .section__title{
+font-size: 1.75rem;
+    }
+    .education__title,.project__title,.certification__title
+    {
+        font-size: 1.5rem;
+    }
+    .education__year,.home__button,.demo__button{
+        font-size: 1.15rem;
+    }
+    .skills__content{
+        justify-self: center;
+    }
+    .project__img,.certification__img {
+        width: 550px;
+        border-radius: 0.5rem;
+        margin-left: 3.25rem;
+      }
+      .carousel__icon{
+          font-size: 2.25rem;
+      }
+      .project__data,.certification__data{
+          margin-left: 3.25rem;
+      }
+      .home__address,
+      .social__container,
+      .education__container,
+      .skills__content,
+      .language__container{
+          margin-left: var(--mb-3);
+      }
+      
+  }
