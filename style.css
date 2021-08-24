@@ -326,12 +326,32 @@ span{
 .education__year{
     font-size: var(--smaller-font-size);
 }
-.skills__content,.language__content{
+.language__content{
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
 }
-
-.skills__name,.language__name{
+.skill-progress-bar{
+    width: 100%;
+    height: 1rem;
+    margin-left: var(--mb-1);
+    margin-top: var(--mb-2);
+    border-radius: 5px;
+    background-color: var(--container-color-alt)
+}
+.skill__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill-percentage{
+    margin: 0;
+}
+.skills__name{
+    display: block;
+    margin-bottom: var(--mb-3);
+    font-weight: bolder;
+}
+.language__name{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
@@ -339,7 +359,7 @@ span{
 }
 
 .skills__icon{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: .5rem;
 }
 .skills__data,.interests__data{
@@ -476,6 +496,116 @@ span{
       visibility: visible;
       bottom: 5rem;
   }
+  .html-skill{
+      height: 1rem;
+      border-radius: 5px;
+      animation-name: html;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+  }
+  .css-skill{
+    height: 1rem;
+    border-radius: 5px;
+    animation-name: css;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .js-skill
+  {
+    height: 1rem;
+    border-radius: 5px;
+    animation-name: js;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .mysql-skill{
+    height: 1rem;
+    border-radius: 5px;
+    animation-name: mysql;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .adobe-skill{
+    height: 1rem;
+    border-radius: 5px;
+    animation-name: adobe;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  .bootstrap-skill{
+    height: 1rem;
+    border-radius: 5px;
+    animation-name: bootstrap;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes html{
+      0%{
+          width: 0;
+          background-color: var(--text-color);
+      }
+      100%{
+          width: 80%;
+          background-color: var(--text-color);
+      }
+  }
+  @keyframes css{
+    0%{
+        width: 0;
+        background-color: var(--text-color);
+    }
+    100%{
+        width: 75%;
+        background-color: var(--text-color);
+    }
+}
+@keyframes js{
+    0%{
+        width: 0;
+        background-color: var(--text-color);
+    }
+    100%{
+        width: 80%;
+        background-color: var(--text-color);
+    }
+}
+@keyframes mysql{
+    0%{
+        width: 0;
+        background-color: var(--text-color);
+    }
+    100%{
+        width: 65%;
+        background-color: var(--text-color);
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0;
+        background-color: var(--text-color);
+    }
+    100%{
+        width: 70%;
+        background-color: var(--text-color);
+    }
+}
+@keyframes adobe{
+    0%{
+        width: 0;
+        background-color: var(--text-color);
+    }
+    100%{
+        width: 70%;
+        background-color: var(--text-color);
+    }
+}
+
 
   @media screen and (max-width:320px)
   {
@@ -614,7 +744,7 @@ span{
             grid-template-columns: repeat(3,max-content);
             column-gap: 3.5rem;
         }
-        .interests__container,.skills__content{
+        .interests__container{
             grid-template-columns: repeat(4,max-content );
             column-gap:4rem;
         }
