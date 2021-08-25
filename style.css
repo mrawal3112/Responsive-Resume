@@ -521,14 +521,6 @@ span{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
-  .mysql-skill{
-    height: 1rem;
-    border-radius: 5px;
-    animation-name: mysql;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-  }
   .adobe-skill{
     height: 1rem;
     border-radius: 5px;
@@ -575,16 +567,7 @@ span{
         background-color: var(--text-color);
     }
 }
-@keyframes mysql{
-    0%{
-        width: 0;
-        background-color: var(--text-color);
-    }
-    100%{
-        width: 65%;
-        background-color: var(--text-color);
-    }
-}
+
 @keyframes bootstrap{
     0%{
         width: 0;
