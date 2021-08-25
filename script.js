@@ -61,9 +61,33 @@ let swiper = new Swiper(".project__container,.certification__container", {
 // Displaying The Scroll Button
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
-    if (this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    if (this.scrollY >= 200) scrollTop.classList.add('show-scroll');
+    else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
+// function loadskills() {
+//     const htmlSkill = document.querySelector('.html5');
+//     const cssSkill = document.querySelector('.css3');
+//     const jsSkill = document.querySelector('.js');
+//     const bootstrapSkill = document.querySelector('.bootstrap5');
+//     const adobeSkill = document.querySelector('.adobexd');
+//     if (this.scrollY > 1900) {
+//         htmlSkill.classList.add('html_skill');
+//         cssSkill.classList.add('css_skill');
+//         jsSkill.classList.add('js_skill');
+//         bootstrapSkill.classList.add('.bootstrap_skill');
+//         adobeSkill.classList.add('.adobe_skill');
+//     }
+//     else {
+//         htmlSkill.classList.remove('html_skill');
+//         cssSkill.classList.remove('css_skill');
+//         jsSkill.classList.remove('js_skill');
+//         bootstrapSkill.classList.remove('.bootstrap_skill');
+//         adobeSkill.classList.remove('.adobe_skill')
+//     }
+// }
+// window.addEventListener('scroll', loadskills)
 
 
 // Changing The Theme to Dark/Light Mode

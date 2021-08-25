@@ -496,7 +496,7 @@ span{
       visibility: visible;
       bottom: 5rem;
   }
-  .html-skill{
+  .html_skill{
       height: 1rem;
       border-radius: 5px;
       animation-name: html;
@@ -504,7 +504,7 @@ span{
       animation-fill-mode: forwards;
       animation-timing-function: ease-in-out;
   }
-  .css-skill{
+  .css_skill{
     height: 1rem;
     border-radius: 5px;
     animation-name: css;
@@ -512,7 +512,7 @@ span{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
-  .js-skill
+  .js_skill
   {
     height: 1rem;
     border-radius: 5px;
@@ -521,7 +521,7 @@ span{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
-  .adobe-skill{
+  .adobe_skill{
     height: 1rem;
     border-radius: 5px;
     animation-name: adobe;
@@ -529,7 +529,7 @@ span{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
-  .bootstrap-skill{
+  .bootstrap_skill{
     height: 1rem;
     border-radius: 5px;
     animation-name: bootstrap;
