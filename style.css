@@ -486,7 +486,7 @@ span{
       background-color: var(--container-color-alt);
       border-radius: .4rem;
       z-index: var(--z-tooltip);
-      transition: .4s;
+      transition: 1s;
   }
   .scrolltop__icon{
       font-size: 1.5rem;
